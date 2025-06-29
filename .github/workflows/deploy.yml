@@ -31,14 +31,10 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     steps:
-      - name: Install Git LFS
-        run: |
-          git lfs install
-          git lfs version
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          lfs: false
+          lfs: true
       - name: Detect package manager
         id: detect-package-manager
         run: |

@@ -5,6 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://mgurov.github.io/astro-experimentation',
+	site: 'https://mgurov.github.io',
+	base: '/astro-experimentation',
 	integrations: [mdx(), sitemap()],
 });
